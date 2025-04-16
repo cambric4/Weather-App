@@ -39,15 +39,10 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            presets: ["@babel/preset-env"],
-            plugins: [
-              ["@babel/plugin-proposal-decorators", { version: "2023-11" }],
-              "@babel/plugin-transform-arrow-functions"
-            ]
+            sourceType: "unambiguous"
           },
         },
       },
     ],
   },
 };
-
